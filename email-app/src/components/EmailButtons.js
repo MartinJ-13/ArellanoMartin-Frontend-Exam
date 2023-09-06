@@ -6,7 +6,7 @@ import {FiFilter} from "react-icons/fi";
 function EmailButtons() {
   return (
     <>
-      <div className="flex font-medium mx-10">
+      <div className="flex font-medium mt-20">
         <div className="flex">
           <input id="rounded-checkbox" type="checkbox" className="mt-1 ml-1" />
           <div className="border border-green flex w-fit px-3 bg-greenbg text-green rounded-md drop-shadow-md mx-2">
@@ -23,7 +23,7 @@ function EmailButtons() {
             </span>
           </div>
 
-          <div className="border border-red flex w-fit px-3 bg-gray-200 text-red rounded-md drop-shadow-md mx-2">
+          <div className="border border-red flex w-fit px-3 bg-redbg text-red rounded-md drop-shadow-md mx-2">
             DELETE
             <span className="ml-1">
               <TiDelete size="1.4rem" />
@@ -31,11 +31,11 @@ function EmailButtons() {
           </div>
         </div>
 
-        <div>
+        <div className="ml-auto right-0">
           {" "}
           <span> &lt; </span>
-           50 of 150 
-           <span> &gt; </span>
+          50 of 150
+          <span> &gt; </span>
         </div>
       </div>
     </>
