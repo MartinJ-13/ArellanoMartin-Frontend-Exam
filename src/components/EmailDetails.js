@@ -9,7 +9,7 @@ function EmailDetails({ data, tagsArray }) {
       <hr className=" my-5 border-0 h-0.5 bg-gray-100" />
       <div className="mx-5">
         <div className="flex">
-          <div className="font-semibold text-xl text-black">Leo M'anaban</div>
+          <div className="font-semibold text-xl text-black">{data.sender_name}</div>
 
           <div className="flex ml-auto right-0">
             {tagsArray.map((tag) => {
