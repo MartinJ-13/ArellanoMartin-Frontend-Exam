@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
-import React, { useState } from "react";
+
 function EmailDetails({ data, tagsArray }) {
   const date = dayjs(data.date);
 

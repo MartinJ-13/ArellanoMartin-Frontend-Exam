@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {MdOutlineDragIndicator} from "react-icons/md";
 import {GrStatusGoodSmall} from "react-icons/gr";
 import {TfiClip} from "react-icons/tfi";
@@ -6,7 +6,7 @@ import {AiOutlineClockCircle} from "react-icons/ai";
 import {FiChevronDown, FiChevronUp} from "react-icons/fi";
 import EmailDetails from "./EmailDetails";
 import dayjs from "dayjs";
-function Email({data}) {
+function Email({data, handleCheckbox}) {
     const [show, setShow] = useState(false); //show email details
     const date = dayjs(data.date);
     const tags = data.tags;
@@ -26,8 +26,9 @@ function Email({data}) {
             />
             <input
               type="checkbox"
-              id="rounded-checkbox"
-              className="my-5 mx-1"
+              id={data.id}
+              className="rounded-checkbox my-5 mx-1"
+              onChange={(e) => handleCheckbox(e, data)}
             />
             <GrStatusGoodSmall className="my-5 text-green mx-1" />
 
